@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Online Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- History  -->
+        <div class="col history">
+          <h1>History</h1>
+          <ul class="list-group">
+            <li  class="list-group-item" *ngFor="let historyItem of history">{{ historyItem }}</li>
+          </ul>    
+        </div>
+        <!-- Calculator -->
+        <div class="col-6">    
+          <form>
+            <h1>Online Calculator</h1>
+            <input [(ngModel)]="input" name="input" type="text" id="screen"  readonly><br>
+            <button type="button" (click)="appendToInput('7')">7</button>
+            <button type="button" (click)="appendToInput('8')">8</button>
+            <button type="button" (click)="appendToInput('9')">9</button>
+            <button class="arithmetic" type="button" (click)="appendToInput('+')">+</button><br>
+            <button type="button" (click)="appendToInput('4')">4</button>
+            <button type="button" (click)="appendToInput('5')">5</button>
+            <button type="button" (click)="appendToInput('6')">6</button>
+            <button class="arithmetic" type="button" (click)="appendToInput('-')">-</button><br>
+            <button type="button" (click)="appendToInput('1')">1</button>
+            <button type="button" (click)="appendToInput('2')">2</button>
+            <button type="button" (click)="appendToInput('3')">3</button>
+            <button class="arithmetic" type="button" (click)="appendToInput('*')">*</button><br>
+            <button type="button"  (click)="appendToInput('0')">0</button>
+            <button type="button" (click)="appendToInput('.')">.</button>
+            <button type="button" (click)="clearInput()">C</button>
+            <button class="arithmetic" type="button" (click)="appendToInput('/')">&#247;</button><br>
+            <button type="button" (click)="calculateResult()">=</button>
+          </form>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<router-outlet />

@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    background-image: url('../numbersBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.history{
+    padding: 30px;
+
+}
+form{
+    padding: 30px;
+}
+input{
+    width: 75px;
+    height: 50px;
+    margin: 5px;
+    font-size: x-large;
+    border-radius: 15px;
+    color: black;
+    width: 330px;
+    height: 50px;
+}
+h1{
+    color: black;
+    padding: 20px;
+}
+
+button{
+    background-color: rgb(191, 188, 188);
+    width: 75px;
+    height: 50px;
+    margin: 5px;
+    font-size: x-large;
+    border-radius: 15px;
+    color: black;
+}
+.arithmetic{
+    background-color: rgb(138, 144, 238);
+
+}
+button:hover{
+    background-color: azure;
+}
+

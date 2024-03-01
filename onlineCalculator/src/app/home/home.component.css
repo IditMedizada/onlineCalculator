@@ -1,0 +1,20 @@
+
+main{
+    background-image: url('../numbersBackground.jpg');
+     background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+.homePage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    color: white;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.484);
+    width: 100%;
+}

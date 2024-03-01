@@ -1,0 +1,28 @@
+Logic Calculator Principles and Reasons:
+
+1. Arithmetic Order:
+   - The calculator processes expressions based on the arithmetic order of operations.
+
+2. Initial Splitting:
+   - The first step involves splitting the arithmetic expression according to addition (+) and subtraction (-) operators.
+
+3. Subexpression Evaluation:
+   - For each subexpression obtained from the initial split:
+     a. Check for the presence of multiplication (*) or division (/) operators.
+     b. If found, calculate the result of the subexpression containing these operations.
+
+4. Final Combination:
+   - Combine all the subexpressions back together according to the original order of addition and subtraction.
+     a. This ensures that the overall arithmetic order is maintained.
+
+5. Order of Operations:
+   - Adherence to the order of operations ensures accurate calculation results:
+     c. Multiplication and Division (left to right)
+     d. Addition and Subtraction (left to right)
+
+6. Example:
+   - For the expression "3 + 5 * 2 - 4 / 2":
+     a. Initial split results in subexpressions: ["3", "5 * 2", "4 / 2"]
+     b. Evaluate each subexpression: ["3", "10", "2"]
+     c. Combine results: "3 + 10 -2" = 11
+
